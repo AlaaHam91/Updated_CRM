@@ -1,0 +1,2712 @@
+{
+	"info": {
+		"_postman_id": "412ade77-d869-41e7-847f-b4198858732f",
+		"name": "CRM New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Control Panel",
+			"item": [
+				{
+					"name": "Job Types",
+					"item": [
+						{
+							"name": "Get all Job Types",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/jobTypes",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobTypes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Job Type",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "ادارية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Managerial",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/jobType",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobType"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Job Type by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/jobType/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobType",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Job Type",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "مبرمج اول",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Senior programmer",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/jobType/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobType",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Job Type",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/jobType/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobType",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Required Education",
+					"item": [
+						{
+							"name": "Get all Required Educations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/education",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get education by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add education",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "المدرسة الثانوية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Secondry School",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/education",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete education by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:8000/api/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update education by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "المدرسة الثانوية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Secondry School Cert",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Language",
+					"item": [
+						{
+							"name": "Get All Languages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/languages",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"languages"
+									],
+									"query": [
+										{
+											"key": "order_by",
+											"value": "id",
+											"description": "You can use many fields to order data",
+											"disabled": true
+										},
+										{
+											"key": "order_by_direction",
+											"value": "DESC",
+											"description": "ASC, DESC",
+											"disabled": true
+										},
+										{
+											"key": "filters[name]",
+											"value": "العرب",
+											"disabled": true
+										},
+										{
+											"key": "filter_operator",
+											"value": "like",
+											"description": "=, gt, lt, gte, lte,like",
+											"disabled": true
+										},
+										{
+											"key": "filters[latin_name]",
+											"value": "ar",
+											"disabled": true
+										},
+										{
+											"key": "paginate",
+											"value": "0",
+											"description": "No Pagination",
+											"disabled": true
+										},
+										{
+											"key": "per_page",
+											"value": "5",
+											"description": "if you set paginate to 1, then you can specify the number of items per page, default per page is 10",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Language By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/language/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"language",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Language",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "الصينية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Chines",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/language",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"language"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Language by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "العربية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Arabic",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/language/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"language",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Language by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:8000/api/language/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"language",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Social Media",
+					"item": [
+						{
+							"name": "Get Social Networks",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/socialNetworks",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"socialNetworks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Social Network by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/socialNetwork/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"socialNetwork",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Social Network",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "سيجنال",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Signal",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/socialNetwork",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"socialNetwork"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Social Network by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "سيجنال",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Signal 2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/socialNetwork/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"socialNetwork",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Social Network by ID Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "سيجنال",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Signal 2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/socialNetwork/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"socialNetwork",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country",
+					"item": [
+						{
+							"name": "viewCountries",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGZkZDliODBmNWFlYTE4NzBlOTRiMTZlOTg5YmM3Mzg2OWRjYmQ3ODJiYTI0NjE5M2Q5NGJiODI5ODg4MDM2Y2NmNTk2ODE3YzczOWY3NmMiLCJpYXQiOiIxNjEyNTk2NjQxLjE0NjE1OCIsIm5iZiI6IjE2MTI1OTY2NDEuMTQ2MTY5IiwiZXhwIjoiMTY0NDEzMjY0MS4xMzMyOTAiLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.nqHeGkSIrhL6AmnftaLZ1L4SP7o21qUK4mELjSXYTjh6A4vcc5n4a1OT4XnRiwyLOfcklYIsSLL2jrdNaHuokLsGINYdV_zuc-j2XTVhLWa5qxBci7x7JYlZuf5ahK-UVlI1LDBlQTMZqCE1HB4DYwJ37saHdQTL2LeZYX5PLroqmEYGNcpL30HGEvkiBM48r2ojJowWW8ll3DbhEodq2rDNed5Q-6NtaVGxQvReEs-xoV3qA2aZyfr8eKmXIQ1RyKTFBkpPfFHnPGDfuTFF1ESXB56MY64nmLBAfVlbjOMs3SVfDFA6BtzTtu43E3NIBpiX-O5SK8J2P1NGM_-ObH2yVOfqF0_FfTI3ZArjDH2iCE_hejcG83ii6MK20B6t_jsMHO4M7-E6bCmNrAsfG7tuEbwG8BOq0SkXmERz99JOQWIUDgIZYM8-v236W9DZPVDeuAWJzvSXZj2IrQc9BL4W08_7jy5o53olZX50TaJgHR4dF45RfzaMKrxdYEEGEv68Jg8dzVvzhQItIXy-gmc32PsZ4oemTaHr2TSHTOmWLd_ufoy4Te503cnYKKGgf453YnUqV9LD2u3r50F4q54Fzk4ypjWiPTUlQWYI_wCwdgYtgzlCa9g1IDxTyZQyauHeJBgAnWBwjjvmuFgRXX3q-8hG9lM8ZQcf53866lg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/countries",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showCountry",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/country/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"country",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createCountry",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "العراق",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Iraq",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "IR",
+											"type": "text"
+										},
+										{
+											"key": "cities[0][name]",
+											"value": "البصرة",
+											"type": "text"
+										},
+										{
+											"key": "cities[0][latin_name]",
+											"value": "Besra",
+											"type": "text"
+										},
+										{
+											"key": "cities[1][name]",
+											"value": "بغداد",
+											"type": "text"
+										},
+										{
+											"key": "cities[1][latin_name]",
+											"value": "Bghdad",
+											"type": "text"
+										},
+										{
+											"key": "cities[2][name]",
+											"value": "اربيل",
+											"type": "text"
+										},
+										{
+											"key": "cities[2][latin_name]",
+											"value": "Arbeel",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/country",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"country"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCountry",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "العراق",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Iraq",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "IR",
+											"type": "text"
+										},
+										{
+											"key": "cities[0][id]",
+											"value": "9",
+											"type": "text"
+										},
+										{
+											"key": "cities[0][name]",
+											"value": "البصرة",
+											"type": "text"
+										},
+										{
+											"key": "cities[0][latin_name]",
+											"value": "Besra",
+											"type": "text"
+										},
+										{
+											"key": "cities[1][id]",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "cities[1][name]",
+											"value": "بغداد",
+											"type": "text"
+										},
+										{
+											"key": "cities[1][latin_name]",
+											"value": "Bghdad",
+											"type": "text"
+										},
+										{
+											"key": "cities[2][id]",
+											"value": "11",
+											"type": "text"
+										},
+										{
+											"key": "cities[2][name]",
+											"value": "اربيل الكردية",
+											"type": "text"
+										},
+										{
+											"key": "cities[2][latin_name]",
+											"value": "Arbeel",
+											"type": "text"
+										},
+										{
+											"key": "cities[3][name]",
+											"value": "السليمانية",
+											"type": "text"
+										},
+										{
+											"key": "cities[3][latin_name]",
+											"value": "Sulimania",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/country/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"country",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCountry",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8000/api/country/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"country",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Branch",
+					"item": [
+						{
+							"name": "Get All Branches",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/branches",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"branches"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Branch By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/branch/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"branch",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add New Branch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "الادارة التنظيمية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Organizational Administration",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/branch",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"branch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Branch By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/branch/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"branch",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Branch",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "فرع الخرطوم",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Khartoum Branch",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/branch/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"branch",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Department",
+					"item": [
+						{
+							"name": "Get all departments",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/departments",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"departments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get department by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/department/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"department",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add department",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "قسم البرمجيات",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Software Department",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "main",
+											"description": "main/branch",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "external",
+											"description": "external/internal",
+											"type": "text"
+										},
+										{
+											"key": "parent_id",
+											"value": "",
+											"description": "optional",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/department",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update department by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "قسم البرمجيات",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Software Department Updated",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "main",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "external",
+											"type": "text"
+										},
+										{
+											"key": "parent_id",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/department/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"department",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete department by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/department/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"department",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Administration",
+					"item": [
+						{
+							"name": "Get All Administrations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/administrations",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"administrations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Administration By ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/administration/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"administration",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Administration By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/administration/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"administration",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add New Administration",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "الادارة التنظيمية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Organizational Administration",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/administration",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"administration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hierarchy",
+					"item": [
+						{
+							"name": "Get All Hierarchies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/hierarchies",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hierarchies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add hierarchy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "قواعد بيانات غير علائقية",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Non - Relation Database",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "branch",
+											"type": "text"
+										},
+										{
+											"key": "parent_id",
+											"value": "9",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/hierarchy",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hierarchy"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get hierarchy By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/hierarchy/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hierarchy",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update hierarchy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "فرع الخرطوم",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Khartoum Branch",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/hierarchy/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hierarchy",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete hierarchy By ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/hierarchy/8",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hierarchy",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Tree",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/hierarchyTree/tree",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hierarchyTree",
+										"tree"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Add user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "هاشم محمد عيسى عبدالله",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Hashem Mohammed Issa Abdallah",
+											"type": "text"
+										},
+										{
+											"key": "is_active",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "account_number",
+											"value": "908889",
+											"type": "text"
+										},
+										{
+											"key": "identity_number",
+											"value": "989990",
+											"type": "text"
+										},
+										{
+											"key": "administration_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "branch_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "department_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "manager_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "job_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "job_title",
+											"value": "\"\"",
+											"type": "text"
+										},
+										{
+											"key": "tickets_email",
+											"value": "abc@ccw.com",
+											"type": "text"
+										},
+										{
+											"key": "notes",
+											"value": "testing system",
+											"type": "text"
+										},
+										{
+											"key": "hierarchy_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "user_name",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abc@bbcw.com",
+											"type": "text"
+										},
+										{
+											"key": "managerial_level_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "confirm_password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "mobiles[0][cm_mobile_id]",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "mobiles[0][country_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "mobiles[0][number]",
+											"value": "091237489000",
+											"type": "text"
+										},
+										{
+											"key": "mobiles[1][cm_mobile_id]",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "mobiles[1][country_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "mobiles[1][number]",
+											"value": "091250079341",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/snipper/Desktop/abc.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View all users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/users",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "abc@bbc.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2JhNmFhMmZjYTJlMDM3ZGUwOTUyMDVjNGQ4MzhlY2Q5NDAxYTY1ZWQ3ZGJmNTNhMWJlMTlmMGE2ZWY3M2QwOTUyMTg2NjRkZWVmNTc2NzMiLCJpYXQiOiIxNjEyOTU4ODg5LjIzNTAwMCIsIm5iZiI6IjE2MTI5NTg4ODkuMjM1MDA5IiwiZXhwIjoiMTY0NDQ5NDg4OS4yMTM5NTQiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rSJyidZkdZBAuzlpoF6M50OJKDBUoA2_oi5Nz7_54JRm6EyYe9yKMkn7ECEJZ3pM630SGAcBOhro4TsFHJeXHo1wYLEMErItnp5ZRkmjQF3QQCrO1203MlmACwbALOtkAf-j-D_rXYTpG41nEtd5Kyu7switr8idXn0oMnZOkWD5fOxQumrFxuy4AT5Azl2c7d2SbviqcyUfLM1npezJ5y2XaeP07CSGzz_3U-MPaD3LGyRl3keEY-UnS0xXH3LzHArZ02MuPnpw25O5zV4cczHiCTIkNey_dpNvpiPku9h-oovB4-WgFc7qj99IOPWoXhMCWFCgXJudJ_w8c4EC5LhArp6q7uKpnYZCekj_EG2Jrx81_EJa9L-weotsr75UD2VrOffsIg-ZJEPJW79g6Hhi0Gm4y2uu1hwu71t6s0DffT8J6thmOsVXsUrogYMGqUX3ffBrcVr5nT1Zy9PXobV2vzqFcWMvhBtbDEle-2cQ97PVPEoKVgCkxt8bajWtETDDEOPU8j86TsOxMur8LMfVoPuYhFD-K5YwBPvI5eLi4z0T_qJpukSu3KFvfYg459VgcmpNmiwOjJxk18cpVhyn0ZadoCfXyxyX5SnH8MEE7CB495-8-cmZPRAC2STAOtmzSGgeLpTUHg7fBvahAu5fTsZACN4MZbrZNmn0mdU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Required Action",
+					"item": []
+				},
+				{
+					"name": "Jobs",
+					"item": [
+						{
+							"name": "Add New Job",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "مهندس برمجيات",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Software engineer",
+											"type": "text"
+										},
+										{
+											"key": "job_type_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "education_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "salary",
+											"value": "5000",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "اليوم التالي",
+											"type": "text"
+										},
+										{
+											"key": "latin_description",
+											"value": "whatever",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "اي",
+											"type": "text"
+										},
+										{
+											"key": "latin_level",
+											"value": "any",
+											"type": "text"
+										},
+										{
+											"key": "work_nature",
+											"value": "الطبيعة",
+											"type": "text"
+										},
+										{
+											"key": "latin_work_nature",
+											"value": "nature",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "any",
+											"type": "text"
+										},
+										{
+											"key": "latin_skills",
+											"value": "any",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "agents_avaialble",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "confirm_request",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/job",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"job"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Job by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "مهندس برمجيات",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Senior Software engineer ",
+											"type": "text"
+										},
+										{
+											"key": "job_type_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "education_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "salary",
+											"value": "5000",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "اليوم التالي",
+											"type": "text"
+										},
+										{
+											"key": "latin_description",
+											"value": "whatever",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "اي",
+											"type": "text"
+										},
+										{
+											"key": "latin_level",
+											"value": "any",
+											"type": "text"
+										},
+										{
+											"key": "work_nature",
+											"value": "الطبيعة",
+											"type": "text"
+										},
+										{
+											"key": "latin_work_nature",
+											"value": "nature",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "any",
+											"type": "text"
+										},
+										{
+											"key": "latin_skills",
+											"value": "any",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "agents_avaialble",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "confirm_request",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/job/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"job",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Jobs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/jobs",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Jobs for agents",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/jobs?filters[agents_available]=0",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"jobs"
+									],
+									"query": [
+										{
+											"key": "filters[agents_available]",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Job by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/job/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"job",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Job by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/job/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"job",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "City",
+					"item": [
+						{
+							"name": "Add New City",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "بحري",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Bahry",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/city",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"city"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update City by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "بحري",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Bahry City",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/city/16",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"city",
+										"16"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Cities",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/cities",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"cities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Cities by country ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/city/16",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"city",
+										"16"
+									],
+									"query": [
+										{
+											"key": "filters[country_id]",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "paginate",
+											"value": "0",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get City by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/cities?filters[country_id]=1&paginate=0",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"cities"
+									],
+									"query": [
+										{
+											"key": "filters[country_id]",
+											"value": "1"
+										},
+										{
+											"key": "paginate",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete City by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/city/16",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"city",
+										"16"
+									],
+									"query": [
+										{
+											"key": "filters[country_id]",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "paginate",
+											"value": "0",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Project",
+					"item": [
+						{
+							"name": "Add New Project",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "CRM System",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "CRM System",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "32-1",
+											"type": "text"
+										},
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "employee_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "branch_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "department_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "12333",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "34456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/project",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"project"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Project by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "نظام ادارة علاقات العملاء",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "CRM System",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "32-1",
+											"type": "text"
+										},
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "employee_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "branch_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "department_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "12333",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "34456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/project/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"project",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Project by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "نظام ادارة علاقات العملاء",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "CRM System",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "32-1",
+											"type": "text"
+										},
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "employee_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "branch_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "department_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "12333",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "34456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/project/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"project",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all projects",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/projects",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get project by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/project/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"project",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Required Education",
+					"item": [
+						{
+							"name": "Get All Required Education",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/education",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Required Education by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Required Education",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "University",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "جامعي",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/education",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Required Education by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "University Updated",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "جامعي",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/education/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Required Education by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:8000/api/education/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"education",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Finish Type",
+					"item": [
+						{
+							"name": "Add Finish Type",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Sth",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "sth",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/finishType",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"finishType"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Finish Type by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "اكمال جزئي",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Partial Completion",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/finishType/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"finishType",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Finish Type by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "اكمال جزئي",
+											"type": "text"
+										},
+										{
+											"key": "latin_name",
+											"value": "Partial Completion",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/finishType/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"finishType",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all finish types",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/finishTypes",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"finishTypes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get finish type by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/finishType/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"finishType",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

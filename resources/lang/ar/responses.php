@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'msg_added_successfully' => 'السجل قد تمت أضافته بنجاح',
+    'msg_updated_successfully' => 'السجل قد تم تحديثه بنجاح',
+    'msg_deleted_successfully' => 'السجل قد تم أزالته بنجاح',
+    'msg_delete_error_used_resource' => "لايمكن حذف السجل لانه مرتبط مع سجلات أخرى",
+    'msg_update_error_used_resource' => "لايمكن تعديل السجل لانه مرتبط مع سجلات أخرى",
+    'msg_not_allowed' => 'الأجراء غير مسموح به',
+    'msg_not_authorized' => 'انت غير مخول لفعل هذا الأجراء',
+    'msg_not_authenticated' => 'المستخدم لم يقم بعملية تسجيل دخول',
+    'msg_not_found' => 'غير موجود',
+    'msg_user_not_found' => 'المستخدم غير موجود',
+    'msg_user_not_enabled' => 'حسابك غير مفعل بعد',
+    'msg_wrong_password' => 'كلمة سر خاطئة',
+    'msg_success' => 'تم',
+    'msg_failed' => 'خطأ',
+    'msg_login_successfully' => 'لقد تم تسجيل الدخول بنجاح',
+    'msg_login_failed' => 'لقد حصل مشكلة بعملية تسجيل الدخول',
+    'msg_file_not_found' => 'الملف غير موجود',
+    'msg_not_found_modification' => 'التعديل غير موجود',
+    'msg_not_found_version' => 'النسخة غير موجودة',
+    'msg_not_found_note' => 'الملاحظة غير موجودة',
+    'msg_not_found_project' => 'المشروع غير موجود',
+    'msg_invalid_input' => 'إدخال غير صحيح',
+    'msg_required' => 'مطلوب',
+    'msg_operation_already_done' => 'العملية قد تمت سابقاَ',
+];
